@@ -34,7 +34,7 @@ function MovieCard() {
       const movieData = await Promise.all(
         movieIds.map(async (id) => {
           const response = await fetch(
-            `http://www.omdbapi.com/?i=${id}&apikey=761ce591`
+            `https://www.omdbapi.com/?i=${id}&apikey=761ce591`
           );
           const data = await response.json();
           return data;

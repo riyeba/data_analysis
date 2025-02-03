@@ -30,7 +30,7 @@ function Leadeboard() {
       try {
         const movieData = await Promise.all(
           movieIds.map(async (id) => {
-            const response = await fetch(`http://www.omdbapi.com/?i=${id}&apikey=761ce591`);
+            const response = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=761ce591`);
             const data = await response.json();
             return data;
           })
