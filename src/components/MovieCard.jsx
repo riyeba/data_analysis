@@ -47,8 +47,8 @@ function MovieCard() {
   }, []);
 
   return (
-    <div className="w-full bg-white shadow-2xl mb-2.5">
-    <div className="flex flex-wrap items-center justify-center ">
+    <div className="w-full bg-white shadow-2xl">
+    <div className="flex flex-wrap items-center gap-1 justify-center pt-2.5 ">
       {dat.slice(0, 6).map((el) => (
         <div key={el.Title} className=" border border-stone-200 w-[7rem] bg-stone-100   hover:bg-stone-100 mr-[0.05rem] mb-[0.1rem] md:w-[10rem]">
           <div className="border-b-4 border-stone-50">
@@ -66,7 +66,7 @@ function MovieCard() {
       ))}
 
     </div>
-    <div className="">
+    <div className="mt-2.5">
     <Home/>
     </div>
    

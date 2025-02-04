@@ -8,10 +8,10 @@ function Home() {
   return (
     <div className="w-full">
       <Leadeboard />
-      <div className="flex gap-[1%] flex-wrap items-center w-full">
-      <PieNomination />
+      <div className="flex gap-1 flex-wrap w-full ">
         <Nomination />
-        
+
+        <PieNomination />
       </div>
     </div>
   );

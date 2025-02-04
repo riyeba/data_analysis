@@ -64,7 +64,7 @@ const handleSubmit=(e)=>{
      <Link to="/"><h1 className='text-2xl font-bold tracking-widest cursor-pointer'>Riyeba</h1></Link> 
         <div  >
           <form onSubmit={handleSubmit}>
-            <input placeholder='search' className='w-32 p-2 border' value={search} onChange={(e)=>setSearch(e.target.value)}/>
+            <input placeholder='search' className='w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400' value={search} onChange={(e)=>setSearch(e.target.value)}/>
             {/* <button className='bg-yellow-200 p-2 h-[2.6rem]  hover:bg-yellow-400  py-2 px-4 rounded-full' >Submit</button> */}
           </form>
         </div>

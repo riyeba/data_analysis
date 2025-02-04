@@ -2,7 +2,7 @@ import React from "react";
 
 function Sidebar() {
   return (
-    <aside className=" max-h-dvh bg-blue-500 shadow-2xl  w-full text-white  p-2 cursor-pointer  ">
+    <aside className="h-[163rem] md:h-[138.5rem] bg-blue-500 shadow-2xl  w-full text-white  p-2 cursor-pointer  ">
       <div className=" mt-3">
         <h1 className="">Dashboard</h1>
         <hr className="font-bold"/>

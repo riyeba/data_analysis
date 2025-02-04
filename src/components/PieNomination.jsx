@@ -91,17 +91,15 @@ const options = {
       },
     },
   };
-  return (
+  return( 
  
-    <div className="w-[49.5%]">
-     <div className="w-full h-full bg-white shadow-2xl">
-        <Doughnut data={data} options={options} className="items-center" />
+    
+      <div className="w-full bg-white shadow-2xl">
+        <Doughnut data={data} options={options} />
       </div>
-    </div>
-     
-  )
+    
   
-
+  )
 }
 
 export default PieNomination;
