@@ -55,11 +55,13 @@ function Nomination() {
   };
 
   return (
-    <div className="bg-white shadow-2xl p-4 w-[30rem] md:w-[41.8rem] ml-[-1rem] md:ml-[0.05rem]">
-      <div className="relative md:w-full h-64 sm:h-80 md:h-96 lg:h-[500px]">
-        <Line data={data} options={options} />
+    <div className="w-[49.5%] ">
+     <div className=" bg-white shadow-2xl h-[31.5rem] w-full">
+        <Line data={data} options={options}  />
       </div>
     </div>
+      
+    
   );
 }
 

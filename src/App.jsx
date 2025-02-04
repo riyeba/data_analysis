@@ -34,13 +34,13 @@ import Searchmovie from "./components/Searchmovie";
 
 function App() {
   return (
-    <div>
+    <div className="w-full h-full">
       <Navbar />
-      <div className="flex gap-3 w-full ">
-        <div className="w-[10%]">
+      <div className="flex gap-3 w-full h-full ">
+        <div className="w-[10%] h-max">
           <Sidebar />
         </div>
-        <div className="w-[80%]">
+        <div className="w-[90%]">
           <Routes>
             <Route path="/" element={<MovieCard />} />
             <Route path="/moviecard" element={<Searchmovie />} />

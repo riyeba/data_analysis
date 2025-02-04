@@ -59,8 +59,8 @@ const handleSubmit=(e)=>{
  
   
   return (
-    <div>
-    <div className='flex items-center w-[87%] md:w-[100%] h-[3rem] md:h-[4.3rem] overflow-auto justify-between md:justify-between p-3 md:p-2  bg-white shadow-2xl'>
+    
+    <div className='flex items-center w-full h-full   justify-between md:justify-between  p-3 mb-2.5 bg-white shadow-2xl'>
      <Link to="/"><h1 className='text-2xl font-bold tracking-widest cursor-pointer'>Riyeba</h1></Link> 
         <div  >
           <form onSubmit={handleSubmit}>
@@ -75,11 +75,7 @@ const handleSubmit=(e)=>{
        
     </div>
    
-        {/* <Searchmovie search={search}/> */}
-       
         
-       
-        </div>
     
   )
 }

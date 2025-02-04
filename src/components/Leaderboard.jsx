@@ -3,27 +3,29 @@
 
 import React, { useEffect, useState } from 'react';
 
+const movieIds = [
+  "tt3896198", // Guardians of the Galaxy Vol. 2
+  "tt0816692", // Interstellar
+  "tt1375666", // Inception
+  "tt2527336", // The Revenant
+  "tt0107290", // Jurassic Park
+  "tt2543164", // Mad Max: Fury Road
+  "tt0181689", // The Matrix
+  "tt0088763", // Star Wars: Episode V - The Empire Strikes Back
+  "tt0137523", // Fight Club
+  "tt1670345", // The Dark Knight Rises
+  "tt1856101", // The Martian
+  "tt1368536", // The Wolf of Wall Street
+  "tt1979320", // Dunkirk
+  "tt0482571"  // Pirates of the Caribbean: The Curse of the Black Pearl
+];
+
 function Leadeboard() {
   const [movielist, setMovieList] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const movieIds = [
-    "tt3896198", // Guardians of the Galaxy Vol. 2
-    "tt0816692", // Interstellar
-    "tt1375666", // Inception
-    "tt2527336", // The Revenant
-    "tt0107290", // Jurassic Park
-    "tt2543164", // Mad Max: Fury Road
-    "tt0181689", // The Matrix
-    "tt0088763", // Star Wars: Episode V - The Empire Strikes Back
-    "tt0137523", // Fight Club
-    "tt1670345", // The Dark Knight Rises
-    "tt1856101", // The Martian
-    "tt1368536", // The Wolf of Wall Street
-    "tt1979320", // Dunkirk
-    "tt0482571"  // Pirates of the Caribbean: The Curse of the Black Pearl
-  ];
+  
 
   useEffect(() => {
     const fetchMovies = async () => {
@@ -51,9 +53,9 @@ function Leadeboard() {
   if (error) return <p>{error}</p>;
 
   return (
-    <div className='bg-white  shadow-2xl  w-[100%] md:w-[110%] p-[3rem] mt-[1rem] ml-[-1rem] md:ml-[0.05rem]'>
-      <h1 className="md:text-2xl font-bold mb-4 text-center">Top Performers</h1>
-      <table className="table-auto text-[12px] w-[25rem]  md:text-2xl md:w-[70rem] items-center border-collapse border border-gray-300 ">
+    <div className='bg-white  shadow-2xl  w-full p-[3rem] mt-[1rem] mb-2.5 '>
+      <h1 className=" font-bold mb-4 text-center">Top Performers</h1>
+      <table className="table-auto  w-full   items-center border-collapse border border-gray-300 ">
         <thead>
           <tr className="bg-gray-100">
             <th className="border border-gray-300 p-2">Rank</th>
