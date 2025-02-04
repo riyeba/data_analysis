@@ -53,7 +53,7 @@ function Leadeboard() {
   if (error) return <p>{error}</p>;
 
   return (
-    <div className='bg-white  shadow-2xl  w-full p-[10px] md:p-[3rem] mt-[1rem] mb-2.5 '>
+    <div className='bg-white  shadow-2xl  w-full p-[13px] md:p-[3rem] mt-[1rem] mb-2.5 '>
       <h1 className=" font-bold mb-4 text-center">Top Performers</h1>
       <table className="table-auto  w-full text-[15px] md:text-[20px]  items-center border-collapse border border-gray-300 ">
         <thead>
