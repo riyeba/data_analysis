@@ -40,10 +40,10 @@ function App() {
         <div className="w-[10%] h-max">
           <Sidebar />
         </div>
-        <div className="w-[90%]">
+        <div className="w-[88%]">
           <Routes>
             <Route path="/" element={<MovieCard />} />
-            <Route path="/moviecard" element={<Searchmovie />} />
+            <Route path="/moviecard" element={<Searchmovie />} />  
           </Routes>
         </div>
       </div>

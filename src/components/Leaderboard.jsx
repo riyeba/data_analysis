@@ -55,7 +55,7 @@ function Leadeboard() {
   return (
     <div className='bg-white  shadow-2xl  w-full p-[3rem] mt-[1rem] mb-2.5 '>
       <h1 className=" font-bold mb-4 text-center">Top Performers</h1>
-      <table className="table-auto  w-full   items-center border-collapse border border-gray-300 ">
+      <table className="table-auto  w-full text-[12px] md:text-[20px]  items-center border-collapse border border-gray-300 ">
         <thead>
           <tr className="bg-gray-100">
             <th className="border border-gray-300 p-2">Rank</th>

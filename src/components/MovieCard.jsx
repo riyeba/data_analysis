@@ -47,9 +47,9 @@ function MovieCard() {
   }, []);
 
   return (
-    <div className="">
-    <div className="flex flex-wrap  gap-[0.2rem]   w-full bg-white shadow-2xl mb-2.5 p-[2rem] overflow-auto">
-      {dat.slice(0, 7).map((el) => (
+    <div className="w-full bg-white shadow-2xl mb-2.5">
+    <div className="flex flex-wrap  gap-[0.2rem]    ml-[5rem]">
+      {dat.slice(0, 8).map((el) => (
         <div key={el.Title} className=" border border-stone-200 w-[7rem] bg-stone-100   hover:bg-stone-100 mr-[0.05rem] mb-[0.1rem] md:w-[10rem]">
           <div className="border-b-4 border-stone-50">
             <img src={el.Poster} alt={el.imdbID} className="h-[7rem] w-[7rem] md:w-[100%] md:h-[100%]" />
